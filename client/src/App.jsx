@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./screens/Home";
 import Login from "./screens/Login";
 import Register from "./screens/Register";
+import About from "./screens/About";
 
 export default function App(){
   return <>
@@ -18,9 +19,9 @@ export default function App(){
     <Route path="register" element={<Register />}>
       
     </Route>
-    {/* <Route path="categories" element={<Categories />}>
+    <Route path="about" element={<About />}>
       
-    </Route> */}
+    </Route>
   </Routes>
   
   
