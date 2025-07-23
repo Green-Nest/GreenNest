@@ -1,5 +1,7 @@
 // src/components/Navbar.js
 import React from 'react';
+import { Link } from "react-router-dom";
+
 import { FaShoppingCart, FaUser } from 'react-icons/fa';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -26,9 +28,9 @@ const Navbar = () => (
             <FaShoppingCart size={20} />
             <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
           </a>
-          <a href="#" className="btn btn-outline-success btn-sm">
-            <FaUser className="me-1" /> Login
-          </a>
+           <Link to="/login" className="btn btn-outline-success btn-sm">
+    <FaUser className="me-1" /> Login
+  </Link>
         </div>
       </div>
     </div>
