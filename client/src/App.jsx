@@ -9,28 +9,31 @@ import Contact from "./screens/Contact";
 import IndoorPlants from "./screens/IndoorPlants";
 import OutdoorPlants from './screens/OutdoorPlants';
 import PlantersAndTools from './screens/PlantersAndTools';
-
+import ProductsPage from "./screens/ProductsPage";
 import AdminPage from "./screens/AdminPage";
-// import EditDeleteProduct from "./screens/EditDeleteProduct";
 import ProductManager from "./screens/ProductManager";
 import CustomerManager from "./screens/CustomerManager";
 import OrderManager from "./screens/OrderManager";
 import AdminDashboard from "./screens/AdminDashboard";
-import ProductsPage from "./screens/ProductsPage";
+
 
 export default function App(){
   return <>
   {/* <Navbar /> */}
   <Routes>
     <Route path="adminPage" element={<AdminPage/>}/>
-    {/* <Route path="editDeleteProduct" element={<EditDeleteProduct/>}/> */}
+
     <Route path="productManager" element={<ProductManager/>}/>
     <Route path="customerManager" element={<CustomerManager/>}/>
     <Route path="orderManager" element={<OrderManager/>}/>
     <Route path="adminDashboard" element={<AdminDashboard/>}/>
+
+    <Route path="/" element={<Home />}/>
+
     <Route path="productspage" element={<ProductsPage />}/>
     
         <Route path="/" element={<Home />}>
+
     
     </Route>
     <Route path="login" element={<Login />}>
