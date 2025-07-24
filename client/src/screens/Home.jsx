@@ -2,25 +2,26 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
-  const categories = [
-    {
-      title: "Indoor Plants",
-      image: "/indoorplant.png",
-
-    },
-    {
-      title: "Outdoor Plants",
-      image: "/outdoorplant.png",
-
-    },
-    {
-      title: "Planters & Tools",
-      image: "/planters.png",
-
-    },
-  ];
+ const categories = [
+  {
+    title: "Indoor Plants",
+    image: "/indoorplant.png",
+    link: "/indoor-plants"
+  },
+  {
+    title: "Outdoor Plants",
+    image: "/outdoorplant.png",
+    link: "/outdoor-plants"
+  },
+  {
+    title: "Planters & Tools",
+    image: "/planters.png",
+    link: "/planters-tools"
+  },
+];
 
   return (
     <>
@@ -57,9 +58,9 @@ const Home = () => {
                 <div className="card-body d-flex flex-column justify-content-between">
                   <h5 className="card-title text-center">{item.title}</h5>
                   <div className="text-center mt-3">
-                    <a href="#" className="btn btn-success btn-sm">
+                    <Link to={item.link} className="btn btn-success btn-sm">
                       Shop Now
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
