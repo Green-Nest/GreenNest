@@ -20,7 +20,7 @@ import ProductsPage from "./screens/ProductsPage";
 
 export default function App(){
   return <>
-  <Navbar />
+  {/* <Navbar /> */}
   <Routes>
     <Route path="adminPage" element={<AdminPage/>}/>
     {/* <Route path="editDeleteProduct" element={<EditDeleteProduct/>}/> */}
