@@ -69,24 +69,31 @@ const IndoorPlants = () => {
   return (
     <>
       <Navbar />
-        <div
-    className="py-5 text-center text-dark"
+           <div className="position-relative text-white" style={{ minHeight: '40vh' }}>
+  {/* Blurred background */}
+  <div
+    className="position-absolute w-100 h-100"
     style={{
-      backgroundColor: "#f8f1e4", // classic beige tone
-      minHeight: "40vh",
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "center",
-      borderBottom: "4px solid #4a7c59", // dark green accent border
+      backgroundImage: "url('bgg.jpg')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      filter: "blur(4px)",
+      transform: "scale(1.00)", // avoid blur edges
+      zIndex: 1,
     }}
+  ></div>
+
+  {/* Centered text */}
+  <div
+    className="position-absolute top-50 start-50 translate-middle text-center"
+    style={{ zIndex: 2 }}
   >
-    <h1 className="display-4 fw-bold" style={{ color: "#4a7c59" }}>
-      Indoor Plants
-    </h1>
-    <p className="lead" style={{ color: "#555" }}>
+    <h1 className="display-4 fw-bold">Indoor Plants</h1>
+    <p className="lead">
       Green up your space with our selection of air-purifying indoor plants
     </p>
   </div>
+</div>
 
       <div className="container my-5">
         <div className="row g-4">

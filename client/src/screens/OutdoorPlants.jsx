@@ -71,24 +71,33 @@ const OutdoorPlants = () => {
   return (
     <>
       <Navbar />
-      <div
-  className="py-5 text-center text-white"
-  style={{
-    backgroundImage: "url('/plant-bg.jpg')",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-    minHeight: "40vh",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    backdropFilter: "brightness(0.6)",
-  }}
->
-  <h1 className="display-4 fw-bold">Outdoor Plants</h1>
-  <p className="lead">
-    Bring life to your garden with our beautiful outdoor plant collection
-  </p>
+     <div className="position-relative text-white" style={{ minHeight: '40vh' }}>
+  {/* Blurred background */}
+  <div
+    className="position-absolute w-100 h-100"
+    style={{
+      backgroundImage: "url('bg.jpg')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      filter: "blur(2px)",
+      transform: "scale(1.00)", // avoid blur edges
+      zIndex: 1,
+    }}
+  ></div>
+
+  {/* Centered text */}
+  <div
+    className="position-absolute top-50 start-50 translate-middle text-center"
+    style={{ zIndex: 2 }}
+  >
+    <h1 className="display-4 fw-bold">Outdoor Plants</h1>
+    <p className="lead">
+      Bring life to your garden with our beautiful outdoor plant collection
+    </p>
+  </div>
 </div>
+
+
 
 
       <div className="container my-5">

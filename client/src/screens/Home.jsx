@@ -26,21 +26,31 @@ const Home = () => {
   return (
     <>
       <Navbar />
+           <div className="position-relative text-white" style={{ minHeight: '40vh' }}>
+  {/* Blurred background */}
+  <div
+    className="position-absolute w-100 h-100"
+    style={{
+      backgroundImage: "url('green.jpg')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      filter: "blur(2px)",
+      transform: "scale(1.05)", // avoid blur edges
+      zIndex: 1,
+    }}
+  ></div>
 
-      {/* Hero Section */}
-      <div
-        className="py-5 text-center text-white"
-        style={{
-          background: "linear-gradient(135deg, #a8e6cf, #dcedc1)",
-          minHeight: "50vh",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-        }}
-      >
-        <h1 className="display-4 fw-bold">Welcome to GreenNest</h1>
-        <p className="lead">Bringing Nature Closer to You — Indoor & Outdoor Plants, Tools and More</p>
-      </div>
+  {/* Centered text */}
+  <div
+    className="position-absolute top-50 start-50 translate-middle text-center"
+    style={{ zIndex: 2 }}
+  >
+    <h1 className="display-4 fw-bold">Welcome to GreenNest</h1>
+    <p className="lead">
+      Bringing Nature Closer to You — Indoor & Outdoor Plants, Tools and More
+    </p>
+  </div>
+</div>
 
       {/* Categories Section */}
       <div className="container my-5">

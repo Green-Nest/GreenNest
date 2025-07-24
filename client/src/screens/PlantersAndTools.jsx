@@ -49,19 +49,31 @@ const PlantersAndTools = () => {
   return (
     <>
       <Navbar />
-      <div
-        className="py-5 text-center text-white"
-        style={{
-          background: "linear-gradient(135deg, #f7e8c1, #d2f1c1)",
-          minHeight: "40vh",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-        }}
-      >
-        <h1 className="display-4 fw-bold">Planters & Tools</h1>
-        <p className="lead">Everything you need to grow and care for your plants, beautifully</p>
-      </div>
+           <div className="position-relative text-white" style={{ minHeight: '40vh' }}>
+  {/* Blurred background */}
+  <div
+    className="position-absolute w-100 h-100"
+    style={{
+      backgroundImage: "url('planters&.jpg')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      filter: "blur(4px)",
+      transform: "scale(1.00)", // avoid blur edges
+      zIndex: 1,
+    }}
+  ></div>
+
+  {/* Centered text */}
+  <div
+    className="position-absolute top-50 start-50 translate-middle text-center"
+    style={{ zIndex: 2 }}
+  >
+    <h1 className="display-4 fw-bold">Planters & Tools</h1>
+    <p className="lead">
+      Everything you need to grow and care for your plants, beautifully
+    </p>
+  </div>
+</div>
 
       <div className="container my-5">
         <div className="row g-4">
