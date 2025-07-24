@@ -6,9 +6,9 @@ import Login from "./screens/Login";
 import Contact from "./screens/Contact"
 import Register from "./screens/Register";
 import About from "./screens/About";
-import AdminPage from "./screens/AdminPage";
 
-import Contact from "./screens/Contact";
+
+
 import IndoorPlants from "./screens/IndoorPlants";
 import OutdoorPlants from './screens/OutdoorPlants';
 import PlantersAndTools from './screens/PlantersAndTools';
