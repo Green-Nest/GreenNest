@@ -8,7 +8,7 @@ const sampleProducts = [
     category: 'indoor',
     description: 'Perfect for bright indoor corners.',
     price: 34.99,
-    image: '/images/fiddle_leaf_fig.jpg',
+    image: "/fiddleleaffig.jpg",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const sampleProducts = [
     category: 'succulent',
     description: 'Low maintenance and cute decor.',
     price: 14.99,
-    image: 'https://source.unsplash.com/featured/?succulent',
+    image: "/minisucculentset.jpg",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const sampleProducts = [
     category: 'flowering',
     description: 'Cleans air and blooms indoors.',
     price: 19.99,
-    image: 'https://source.unsplash.com/featured/?flower-pot',
+    image: "/peacelily.jpg",
   },
   {
     id: 4,
@@ -32,7 +32,7 @@ const sampleProducts = [
     category: 'outdoor',
     description: 'Elegant and mindful plant art.',
     price: 45.00,
-    image: 'https://source.unsplash.com/featured/?bonsai',
+    image: "/bonsaitree.jpg",
   },
   {
     id: 5,
@@ -40,7 +40,7 @@ const sampleProducts = [
     category: 'indoor',
     description: 'Perfect for bright indoor corners.',
     price: 34.99,
-    image: 'https://source.unsplash.com/featured/?potted-plant',
+    image: "/fiddleleaffig.jpg",
   },
   {
     id: 6,
@@ -48,7 +48,7 @@ const sampleProducts = [
     category: 'succulent',
     description: 'Low maintenance and cute decor.',
     price: 14.99,
-    image: 'https://source.unsplash.com/featured/?succulent',
+    image: "/minisucculentset.jpg",
   },
   {
     id: 7,
@@ -56,7 +56,7 @@ const sampleProducts = [
     category: 'flowering',
     description: 'Cleans air and blooms indoors.',
     price: 19.99,
-    image: 'https://source.unsplash.com/featured/?flower-pot',
+    image: "/peacelily.jpg",
   },
   {
     id: 8,
@@ -64,7 +64,7 @@ const sampleProducts = [
     category: 'outdoor',
     description: 'Elegant and mindful plant art.',
     price: 45.00,
-    image: 'https://source.unsplash.com/featured/?bonsai',
+    image: "/bonsaitree.jpg",
   },
 ];
 
