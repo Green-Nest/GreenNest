@@ -5,6 +5,7 @@ import Home from "./screens/Home";
 import Login from "./screens/Login";
 import Register from "./screens/Register";
 import About from "./screens/About";
+import Contact from "./screens/Contact";
 
 export default function App(){
   return <>
@@ -20,6 +21,9 @@ export default function App(){
       
     </Route>
     <Route path="about" element={<About />}>
+      
+    </Route>
+    <Route path="contact" element={<Contact />}>
       
     </Route>
   </Routes>
