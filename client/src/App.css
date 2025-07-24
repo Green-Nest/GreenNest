@@ -1,0 +1,10 @@
+/* Hover dropdown for Shop */
+.shop-hover:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+/* Optional: Smooth dropdown appearance */
+.dropdown-menu {
+  transition: all 0.3s ease;
+}
