@@ -22,7 +22,7 @@ import Footer from "./components/Footer";
 
 export default function App(){
   return <>
-  {/* <Navbar /> */}
+  <Navbar />
   <Routes>
     <Route path="adminPage" element={<AdminPage/>}/>
   
