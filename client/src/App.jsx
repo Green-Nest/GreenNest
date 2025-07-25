@@ -3,9 +3,12 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./screens/Home";
 import Login from "./screens/Login";
+import Contact from "./screens/Contact"
 import Register from "./screens/Register";
 import About from "./screens/About";
-import Contact from "./screens/Contact";
+
+
+
 import IndoorPlants from "./screens/IndoorPlants";
 import OutdoorPlants from './screens/OutdoorPlants';
 import PlantersAndTools from './screens/PlantersAndTools';
@@ -19,9 +22,10 @@ import Footer from "./components/Footer";
 
 export default function App(){
   return <>
-  <Navbar />
+  {/* <Navbar /> */}
   <Routes>
     <Route path="adminPage" element={<AdminPage/>}/>
+  
 
     <Route path="productManager" element={<ProductManager/>}/>
     <Route path="customerManager" element={<CustomerManager/>}/>
