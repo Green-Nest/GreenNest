@@ -3,7 +3,9 @@ body {
   margin: 0;
   background-color: #f4f8f4;
 }
-
+h2{
+  color: white;
+}
 .header {
   background-color: #2e7d32;
   color: white;
@@ -14,7 +16,7 @@ body {
 }
 
 .container {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .filters select {

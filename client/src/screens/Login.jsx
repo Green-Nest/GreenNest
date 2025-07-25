@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { BiColor } from "react-icons/bi";
+import { GiWhiteBook } from "react-icons/gi";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 
 
@@ -13,7 +15,7 @@ export default function Login() {
     if(email == admEmail &&  password == admPass)
       navigate('/adminPage')
     else
-      navigate('/home')
+      navigate('/productsPage')
     alert(`Logged in with ${email}`);
   };
 
@@ -24,8 +26,8 @@ export default function Login() {
     >
       <div className="col-md-6">
         <div className="card shadow-lg">
-          <div className="card-header bg-success text-white text-center">
-            <h3>Login to GreenNest</h3>
+          <div className="card-header bg-success text-red text-center">
+            <h2>Login to GreenNest</h2>
           </div>
           <div className="card-body">
             <form onSubmit={handleLogin}>
