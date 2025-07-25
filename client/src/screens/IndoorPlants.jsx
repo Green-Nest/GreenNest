@@ -68,7 +68,7 @@ const indoorPlants = [
 const IndoorPlants = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
            <div className="position-relative text-white" style={{ minHeight: '40vh' }}>
   {/* Blurred background */}
   <div

@@ -10,6 +10,8 @@ function CustomerManager() {
     phone: "",
     address: "",
   });
+
+  
   const [editingIndex, setEditingIndex] = useState(null);
 
   const handleChange = (e) => {

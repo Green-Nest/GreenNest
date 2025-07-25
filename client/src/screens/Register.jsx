@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import AllData from "./AllData";
 export default function Register() {
   const [formData, setFormData] = useState({
     name: "",
@@ -8,7 +8,7 @@ export default function Register() {
     password: "",
     confirmPassword: "",
   });
-
+  
   const handleChange = (e) => {
     setFormData((prev) => ({
       ...prev,

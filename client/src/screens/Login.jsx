@@ -1,14 +1,19 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 
 export default function Login() {
+  const navigate = useNavigate()
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const admEmail = "admin@test.com"
+  const admPass = "admin"
   const handleLogin = (e) => {
     e.preventDefault();
-    // Add authentication logic here
+    if(email == admEmail &&  password == admPass)
+      navigate('/adminPage')
+    else
+      navigate('/home')
     alert(`Logged in with ${email}`);
   };
 

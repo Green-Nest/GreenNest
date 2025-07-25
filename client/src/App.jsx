@@ -15,7 +15,7 @@ import ProductManager from "./screens/ProductManager";
 import CustomerManager from "./screens/CustomerManager";
 import OrderManager from "./screens/OrderManager";
 import AdminDashboard from "./screens/AdminDashboard";
-
+import Footer from "./components/Footer";
 
 export default function App(){
   return <>
@@ -57,9 +57,9 @@ export default function App(){
 
     <Route path="/planters-tools" element={<PlantersAndTools />}>
     </Route>
-
+    
   </Routes>
-  
+  <Footer/>
   
   </>
 }

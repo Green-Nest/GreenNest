@@ -52,7 +52,7 @@ function AdminPage() {
         <div className="dashboard">
           <div className="card">
             <h3>Total Sales</h3>
-            <p>4,500</p>
+            <p>₹4,500</p>
           </div>
           <div className="card">
             <h3>Orders</h3>

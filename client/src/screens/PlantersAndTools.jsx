@@ -48,7 +48,7 @@ const plantersAndTools = [
 const PlantersAndTools = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
            <div className="position-relative text-white" style={{ minHeight: '40vh' }}>
   {/* Blurred background */}
   <div

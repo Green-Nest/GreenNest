@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 export default function About() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div
         className="position-relative text-white"
         style={{ minHeight: "40vh" }}
@@ -68,7 +68,7 @@ export default function About() {
         </div>
       </div>
 
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
