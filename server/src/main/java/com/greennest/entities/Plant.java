@@ -28,7 +28,7 @@ public class Plant extends BaseEntity{
 	private int stock;
 	@Column(name="image_url")
 	private String imageUrl;
-	
+	private boolean status;
 	public Plant(String title, String description, Properties properties, double price, int stock, String imageUrl) {
 		this.title = title;
 		this.description = description;
