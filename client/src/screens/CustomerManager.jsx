@@ -11,7 +11,13 @@ function CustomerManager() {
     address: "",
   });
 
-  
+  const customer = {
+    name: "himanshu",
+    email: "himanshu@test.com",
+    phone: "himanshu",
+    address: "Raibarely, Lucknow, UP",
+  }
+  customers.push(customer)
   const [editingIndex, setEditingIndex] = useState(null);
 
   const handleChange = (e) => {
@@ -65,6 +71,16 @@ function CustomerManager() {
   };
 
   return (
+    <div className="admin-container">
+      <aside className="sidebar">
+        <h2>🌿 Admin Page 🌿</h2>
+        <nav>
+          <a href="/adminDashboard">Dashboard</a>
+          <a href="/productManager">Products</a>
+          <a href="/orderManager">Orders</a>
+          <a href="/customerManager">Customers</a>
+        </nav>
+      </aside>
     <div className="customer-manager">
       <h1>👥 Customer Management</h1>
 
@@ -117,6 +133,7 @@ function CustomerManager() {
           </tbody>
         </table>
       )}
+    </div>
     </div>
   );
 }

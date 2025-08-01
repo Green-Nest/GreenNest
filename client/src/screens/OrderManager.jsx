@@ -9,6 +9,14 @@ function OrderManager() {
     quantity: 1,
     status: "Pending",
   });
+
+  const order = {
+    customerName: "rishabh",
+    product: "Marry gold plant",
+    quantity: 1,
+    status: "Pending",
+  }
+  orders.push(order)
   const [editingIndex, setEditingIndex] = useState(null);
 
   const handleChange = (e) => {
@@ -67,6 +75,16 @@ function OrderManager() {
   };
 
   return (
+    <div className="admin-container">
+      <aside className="sidebar">
+        <h2>🌿 Admin Page 🌿</h2>
+        <nav>
+          <a href="/adminDashboard">Dashboard</a>
+          <a href="/productManager">Products</a>
+          <a href="/orderManager">Orders</a>
+          <a href="/customerManager">Customers</a>
+        </nav>
+      </aside>
     <div className="order-manager">
       <h1>📦 Order Management</h1>
 
@@ -142,6 +160,7 @@ function OrderManager() {
           </tbody>
         </table>
       )}
+    </div>
     </div>
   );
 }

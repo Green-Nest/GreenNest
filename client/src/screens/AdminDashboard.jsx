@@ -11,6 +11,16 @@ function AdminDashboard() {
   };
 
   return (
+    <div className="admin-container">
+      <aside className="sidebar">
+        <h2>🌿 Admin Page 🌿</h2>
+        <nav>
+          <a href="/adminDashboard">Dashboard</a>
+          <a href="/productManager">Products</a>
+          <a href="/orderManager">Orders</a>
+          <a href="/customerManager">Customers</a>
+        </nav>
+      </aside>
     <div className="dashboard-container">
       <h1>🌿 Admin Dashboard</h1>
 
@@ -41,6 +51,7 @@ function AdminDashboard() {
           <a href="/ordersManager">Manage Orders</a>
         </div>
       </div>
+    </div>
     </div>
   );
 }

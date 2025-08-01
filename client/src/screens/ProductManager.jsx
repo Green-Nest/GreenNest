@@ -79,6 +79,16 @@ function ProductManager() {
   const [show, setShow] = useState("form d-none")
   console.log("show value: " + {show})
   return (
+    <div className="admin-container">
+      <aside className="sidebar">
+        <h2>🌿 Admin Page 🌿</h2>
+        <nav>
+          <a href="/adminDashboard">Dashboard</a>
+          <a href="/productManager">Products</a>
+          <a href="/orderManager">Orders</a>
+          <a href="/customerManager">Customers</a>
+        </nav>
+      </aside>
     <div className="product-manager">
       <h1>🌿 Product Management</h1>
 
@@ -138,6 +148,7 @@ function ProductManager() {
           </tbody>
         </table>
       )}
+    </div>
     </div>
   );
 }

@@ -21,6 +21,36 @@ const Home = () => {
     image: "/planters.png",
     link: "/planters-tools"
   },
+  {
+    title: "Indoor Plants",
+    image: "/indoorplant.png",
+    link: "/indoor-plants"
+  },
+  {
+    title: "Outdoor Plants",
+    image: "/outdoorplant.png",
+    link: "/outdoor-plants"
+  },
+  {
+    title: "Planters & Tools",
+    image: "/planters.png",
+    link: "/planters-tools"
+  },
+  {
+    title: "Indoor Plants",
+    image: "/indoorplant.png",
+    link: "/indoor-plants"
+  },
+  {
+    title: "Outdoor Plants",
+    image: "/outdoorplant.png",
+    link: "/outdoor-plants"
+  },
+  {
+    title: "Planters & Tools",
+    image: "/planters.png",
+    link: "/planters-tools"
+  },
 ];
 
   return (
